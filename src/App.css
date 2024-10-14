@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
+
+/* #region Style Guide */
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Train One', cursive;
+*/
+/* #endregion */
+
+* {
+	/* border: none;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	background: none; */
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+html {
+	background: repeating-linear-gradient(
+		to bottom,
+		rgb(0, 255, 0, .1),
+		rgb(0, 25, 0) .5vh,
+		rgb(0, 255, 0, .1) 1vh
+	);
+	animation: bg-pan 2s linear infinite;
+}
+
+#root{
+	max-width: 1600px;
+	max-height: 800px;
+	margin: 0 auto;
+	font-size: 30px;
+	height: 75%;
+	color: rgb(0, 255, 0) !important;
+}
+
+/* @keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+} */
+
+@keyframes bg-pan {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 10px 10px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	article.banner h2 {
+		width: 90%;
+		margin-left: 5%;
+		font-size: 1.75em;
+	}
+
+}
